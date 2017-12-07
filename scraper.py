@@ -48,7 +48,7 @@ def scrape_page(url):
     #now we call another function on root, which we write - above
     scrape_table(root)
 #START HERE: This is the part of the URL which all our pages share
-base_url = 'https://paulbradshaw.github.io/scraping-for-
+base_url = 'https://paulbradshaw.github.io/scraping-for-\
 everyone/scottishschools/iSchoolid_'
 #And these are the numbers which we need to complete that URL to
 #make each individual URL
