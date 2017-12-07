@@ -1,4 +1,6 @@
-# Data stored on individual pages not accessible from one single #page typical URL is https://paulbradshaw.github.io/scraping-for-everyone/scottishschools/iSchoolid_5237521.html
+# Data stored on individual pages not accessible from one single
+#page typical URL is https://paulbradshaw.github.io/scraping-for-\
+#everyone/scottishschools/iSchoolid_5237521.html
 #Need to cycle through a list of those codes
 #If you want to understand this scraper - start at the bottom 
 #where it says 'base_url' (line 40 or so)
@@ -49,7 +51,7 @@ def scrape_page(url):
     scrape_table(root)
 #START HERE: This is the part of the URL which all our pages share
 base_url = 'https://paulbradshaw.github.io/scraping-for-\
-everyone/scottishschools/iSchoolid_'
+            everyone/scottishschools/iSchoolid_'
 #And these are the numbers which we need to complete that URL to
 #make each individual URL
 #This list has been compiled using the =JOIN formula in Google #Docs on a column of school codes
