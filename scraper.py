@@ -13,8 +13,7 @@ print "After converting to xml it has %d bytes" % len(xmldata)
 print "The first 2000 characters are: ", xmldata[:2000]
 root = lxml.etree.fromstring(xmldata)
 pages = list(root)
-print "The pages are numbered:", [ page.attrib.get("number")  for\
- page in pages ]
+print "The pages are numbered:", [ page.attrib.get("number")  for page in pages ]
 #this function has to work recursively because we might have #"<bPart1 <ipart 2</i</b"
 def gettext_with_bi_tags(el): 
     res = [ ]
