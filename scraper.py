@@ -1,6 +1,6 @@
 # Data stored on individual pages not accessible from one single
 #page typical URL is https://paulbradshaw.github.io/scraping-for-\
-#everyone/scottishschools/iSchoolid_5237521.html
+everyone/scottishschools/iSchoolid_5237521.html
 #Need to cycle through a list of those codes
 #If you want to understand this scraper - start at the bottom 
 #where it says 'base_url' (line 40 or so)
@@ -44,25 +44,3 @@ def scrape_page(url):
     #above, and the contents put into a new object, 'html'
     html = scraperwiki.scrape(url)
     print html
-    #now we use the lxml.html function imported above to convert
-    #'html' into a new object, 'root'
-    root = lxml.html.fromstring(html)
-    #now we call another function on root, which we write - above
-    scrape_table(root)
-#START HERE: This is the part of the URL which all our pages share
-base_url = 'https://paulbradshaw.github.io/scraping-for-\
-            everyone/scottishschools/iSchoolid_'
-#And these are the numbers which we need to complete that URL to
-#make each individual URL
-#This list has been compiled using the =JOIN formula in Google #Docs on a column of school codes
-schoolIDs =['5237521','5244439','5237629','5237823','5234026']
-#go through the schoolIDs list above, and for each ID...
-for item in schoolIDs:
-    #show it in the console
-    print item
-    #create a URL called 'next_link' which adds that ID to the end
-    #of the base_url variable
-    next_link = base_url+item+'.html'
-    #pass that new concatenated URL to a function, 'scrape_page',
-    #which is scripted above
-    scrape_page(next_link)
