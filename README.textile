@@ -1,0 +1,1 @@
+Scrapes free school meals data for Scottish schools. "More on the background to this, and visualisation here":http://helpmeinvestigate.com/education/2012/01/free-school-meals-in-scottish-primary-schools-data-visualisation/ 
