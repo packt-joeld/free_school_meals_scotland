@@ -1,6 +1,5 @@
 # Data stored on individual pages not accessible from one single
-#page typical URL is https://paulbradshaw.github.io/scraping-for-\
-everyone/scottishschools/iSchoolid_5237521.html
+#page typical URL is https://paulbradshaw.github.io/scraping-for-everyone/scottishschools/iSchoolid_5237521.html
 #Need to cycle through a list of those codes
 #If you want to understand this scraper - start at the bottom 
 #where it says 'base_url' (line 40 or so)
